@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-file_path = '/mnt/data/Mall_Customers (1).csv'
+file_path = '/mnt/data/Mall_Customers.csv'
 data = pd.read_csv(file_path)
 
 # Display the first few rows of the dataset
