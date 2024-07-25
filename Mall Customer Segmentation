@@ -1,5 +1,5 @@
+#Data Collection and Cleaning
 import pandas as pd
-
 # Load the dataset
 file_path = '/content/Mall_Customers.csv'
 data = pd.read_csv(file_path)
@@ -32,6 +32,9 @@ data['Gender'] = data['Gender'].map({'Male': 0, 'Female': 1})
 # Save the cleaned dataset
 data.to_csv('cleaned_mall_customers.csv', index=False)
 print(data.head(10))
+
+#Exploratory Data Analysis (EDA)
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -64,6 +67,8 @@ plt.figure(figsize=(10, 6))
 sns.scatterplot(data=data, x='Annual Income (k$)', y='Spending Score (1-100)', hue='Gender')
 plt.title('Income vs Spending Score')
 plt.show()
+
+#Customer Segmentation
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
