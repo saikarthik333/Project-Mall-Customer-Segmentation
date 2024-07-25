@@ -1,1 +1,53 @@
+import pandas as pd
+
+# Load the dataset
+file_path = '/mnt/data/Mall_Customers (1).csv'
+data = pd.read_csv(file_path)
+
+# Display the first few rows of the dataset
+print(data.head(10))
+
+# Check for missing values
+count = data.isnull().sum()
+print(count)
+
+# Fill missing values for 'Age' with the mean
+mean_age = data['Age'].mean()
+data["Age"].fillna(mean_age, inplace=True)
+
+# Drop rows with any remaining missing values (if any)
+data.dropna(inplace=True)
+
+# Check again for missing values to confirm
+count = data.isnull().sum()
+print(count)
+
+# Encode 'Gender' column
+data['Gender'] = data['Gender'].map({'Male': 0, 'Female': 1})
+
+# Renaming columns for better readability
+data.columns = ["CustomerID", "Gender", "Age", "AnnualIncome", "SpendingScore"]
+
+# Save the cleaned dataset
+data.to_csv('cleaned_mall_customers.csv', index=False)
+print(data.head(10))
+
+
+
+
+## Insights and Recommendations
+
+### Key Insights
+1. **Cluster 0:** Description of characteristics (e.g., high income, low spending).
+2. **Cluster 1:** Description of characteristics (e.g., low income, high spending).
+3. **Cluster 2:** Description of characteristics.
+4. **Cluster 3:** Description of characteristics.
+5. **Cluster 4:** Description of characteristics.
+
+### Recommendations
+1. **Cluster 0:** Marketing strategy recommendations (e.g., targeted promotions, loyalty programs).
+2. **Cluster 1:** Marketing strategy recommendations.
+3. **Cluster 2:** Marketing strategy recommendations.
+4. **Cluster 3:** Marketing strategy recommendations.
+5. **Cluster 4:** Marketing strategy recommendations.
 
