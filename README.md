@@ -1,41 +1,96 @@
-# Customer Segmentation Project
 
-## Project Overview
+# 🛍️ Mall Customer Segmentation Using K-Means Clustering
 
-This project focuses on segmenting customers based on their purchasing behavior using the K-Means clustering algorithm. The project includes data collection and cleaning, exploratory data analysis (EDA), and customer segmentation to provide actionable insights for marketing strategies.
+This project focuses on segmenting mall customers based on their **demographics** and **spending behavior** using **K-Means Clustering**, an unsupervised machine learning technique. The goal is to identify customer groups that can help businesses optimize their marketing strategies and personalize services.
 
-## Project Structure
+## 📁 Dataset
 
-- `cleaned_mall_customers.csv`: Cleaned dataset after preprocessing.
-- `clustered_mall_customers.csv`: Dataset with assigned clusters after K-Means clustering.
-- `EDA.ipynb`: Jupyter notebook containing the exploratory data analysis.
-- `Clustering.ipynb`: Jupyter notebook containing the customer segmentation using K-Means clustering.
-- `Insights_Report.pdf`: A brief report summarizing key insights and recommendations based on the clustering results.
+- **Source:** [Mall_Customers.csv](./Mall_Customers.csv)
+- **Features:**
+  - `CustomerID`
+  - `Gender`
+  - `Age`
+  - `Annual Income (k$)`
+  - `Spending Score (1-100)`
 
-## Data Collection and Cleaning
+## 🎯 Objective
 
-### Steps:
-1. **Load Dataset**: Load the dataset `Mall_Customers.csv` using pandas.
-2. **Check Missing Values**: Identify and handle any missing values.
-3. **Encode Categorical Variables**: Encode the 'Gender' column.
-4. **Save Cleaned Dataset**: Save the cleaned dataset as `cleaned_mall_customers.csv`.
+- Perform **data cleaning and preprocessing**.
+- Conduct **Exploratory Data Analysis (EDA)** to understand customer patterns.
+- Apply **K-Means clustering** to segment customers.
+- Visualize the results for **business insights** and marketing strategies.
 
-## Exploratory Data Analysis (EDA)
+## ⚙️ Tools & Technologies Used
 
-### Steps:
-1. **Descriptive Statistics**: Calculate basic statistics of the dataset.
-2. **Visualizations**: Create histograms for age, annual income, and spending score distributions. Generate a scatter plot of annual income vs. spending score colored by gender.
+- **Programming Language:** Python
+- **Libraries:**
+  - `Pandas` and `NumPy` – Data manipulation and analysis
+  - `Matplotlib` and `Seaborn` – Data visualization
+  - `Scikit-learn` – Clustering algorithm and preprocessing
+- **Visualization Tools:** Power BI (optional)
 
+## 📊 Steps Followed
 
-## Customer Segmentation
+### 1. Data Cleaning & Preprocessing
+- Handled missing values (if any)
+- Encoded `Gender` column (Male = 0, Female = 1)
+- Standardized numerical features using `StandardScaler`
 
-### Steps:
-1. **Feature Selection and Standardization**: Select relevant features and standardize them.
-2. **K-Means Clustering**: Apply K-Means clustering to segment the customers.
-3. **Visualization**: Visualize the customer segments in a scatter plot.
+### 2. Exploratory Data Analysis (EDA)
+- Visualized distributions of Age, Income, and Spending Score
+- Used scatter plots to explore customer spending patterns
 
-## Insights and Recommendations
+### 3. K-Means Clustering
+- Applied the **Elbow Method** to determine the optimal number of clusters (K=5)
+- Clustered customers using `KMeans` from Scikit-learn
+- Added a new column `Cluster` to the dataset indicating group membership
 
-The `Insights_Report.pdf` provides key insights and actionable recommendations based on the customer segmentation results. The report includes:
-- Detailed characteristics of each customer segment.
-- Marketing strategies tailored to each segment.
+### 4. Visualization of Clusters
+- Plotted customer segments using scatter plots colored by cluster
+- Interpreted each cluster for business insights
+
+## 📌 Results
+
+- Identified **5 distinct customer segments** based on income and spending behavior.
+- Enabled potential for **personalized marketing**, **targeted promotions**, and **customer retention strategies**.
+
+## 📁 Project Structure
+
+```bash
+├── cleaned_mall_customers.csv
+├── clustered_mall_customers.csv
+├── Mall_Customers.csv
+├── mall_customer_segmentation.ipynb
+├── README.md
+````
+
+## 🚀 How to Run
+
+1. Clone this repository
+
+   ```bash
+   git clone https://github.com/<your-username>/mall-customer-segmentation.git
+   cd mall-customer-segmentation
+   ```
+
+2. Install required Python libraries
+
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+   ```
+
+3. Run the notebook `mall_customer_segmentation.ipynb` using Jupyter Notebook or VSCode.
+
+## 📈 Future Improvements
+
+* Apply **DBSCAN or Hierarchical clustering** for comparison.
+* Integrate more features like customer purchase history or visit frequency.
+* Deploy as a **web app using Streamlit or Flask** for business use.
+
+## 🙋‍♂️ Author
+
+**Motapothula Sai Karthik**
+B.Tech CSE (ML Specialization) – Lovely Professional University
+[LinkedIn](https://www.linkedin.com/in/saikarthik333) • [GitHub](https://github.com/saikarthik333)
+
+---
