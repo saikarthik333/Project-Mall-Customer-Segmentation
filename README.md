@@ -60,7 +60,7 @@ This project focuses on segmenting mall customers based on their **demographics*
 ├── cleaned_mall_customers.csv
 ├── clustered_mall_customers.csv
 ├── Mall_Customers.csv
-├── mall_customer_segmentation.ipynb
+├── mall_customer_segmentation.py
 ├── README.md
 ````
 
@@ -79,7 +79,7 @@ This project focuses on segmenting mall customers based on their **demographics*
    pip install pandas numpy matplotlib seaborn scikit-learn
    ```
 
-3. Run the notebook `mall_customer_segmentation.ipynb` using Jupyter Notebook or VSCode.
+3. Run the `mall_customer_segmentation.py` using Jupyter Notebook or VSCode.
 
 ## 📈 Future Improvements
 
