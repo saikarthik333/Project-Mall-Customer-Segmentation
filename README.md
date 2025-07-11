@@ -27,7 +27,6 @@ This project focuses on segmenting mall customers based on their **demographics*
   - `Pandas` and `NumPy` – Data manipulation and analysis
   - `Matplotlib` and `Seaborn` – Data visualization
   - `Scikit-learn` – Clustering algorithm and preprocessing
-- **Visualization Tools:** Power BI (optional)
 
 ## 📊 Steps Followed
 
@@ -57,8 +56,6 @@ This project focuses on segmenting mall customers based on their **demographics*
 ## 📁 Project Structure
 
 ```bash
-├── cleaned_mall_customers.csv
-├── clustered_mall_customers.csv
 ├── Mall_Customers.csv
 ├── mall_customer_segmentation.py
 ├── README.md
