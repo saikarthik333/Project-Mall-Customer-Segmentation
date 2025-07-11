@@ -69,7 +69,7 @@ This project focuses on segmenting mall customers based on their **demographics*
 1. Clone this repository
 
    ```bash
-   git clone https://github.com/<your-username>/mall-customer-segmentation.git
+   git clone https://github.com/saikarthik333/Project-Mall-Customer-Segmentation.git
    cd mall-customer-segmentation
    ```
 
@@ -86,11 +86,3 @@ This project focuses on segmenting mall customers based on their **demographics*
 * Apply **DBSCAN or Hierarchical clustering** for comparison.
 * Integrate more features like customer purchase history or visit frequency.
 * Deploy as a **web app using Streamlit or Flask** for business use.
-
-## 🙋‍♂️ Author
-
-**Motapothula Sai Karthik**
-B.Tech CSE (ML Specialization) – Lovely Professional University
-[LinkedIn](https://www.linkedin.com/in/saikarthik333) • [GitHub](https://github.com/saikarthik333)
-
----
