@@ -80,6 +80,6 @@ This project focuses on segmenting mall customers based on their **demographics*
 
 ## 📈 Future Improvements
 
-* Apply **DBSCAN or Hierarchical clustering** for comparison.
+* Apply **DBSCAN or Hierarchical clustering** for the comparison.
 * Integrate more features like customer purchase history or visit frequency.
 * Deploy as a **web app using Streamlit or Flask** for business use.
